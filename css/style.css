@@ -1,0 +1,413 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5em;
+    color: rgb(102, 102, 102);
+    font-family: futura, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* =============== NAVIGATION =============== */
+
+nav {
+    background-color: rgb(56, 61, 76);
+    color: white;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    text-indent: 0;
+}
+
+nav ul a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav ul a li {
+    display: inline-block;
+    border: 0.01em solid rgb(100, 109, 124);
+    margin: 15px 7px;
+    padding: 8px 20px 10px;
+    font-size: 150%;
+    color: rgb(250, 250, 251);
+}
+
+nav ul a li:hover {
+    background-color: rgb(100, 109, 124);
+}
+
+
+/* =============== HEADER =============== */
+
+header {
+    margin-top: 70px;
+    height: 500px;
+    background: url('../images/bg-1.jpg');
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 500%;
+    color: rgb(250, 250, 251);
+    text-align: center;
+    padding-top: 180px;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-shadow: 2px 2px 10px black;
+}
+
+/* =============== WRAPPER =============== */
+
+#wrapper {
+    margin: 0 auto;
+    padding-top: 50px;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-areas:
+    ". abouttop ."
+    ". aboutbottom ."
+    "servicesbg servicesbg servicesbg"
+    ". servicestop ."
+    ". servicesbottom ."
+    "contact contact contact"
+    ;
+    grid-row-gap: 60px;
+}
+
+/* =============== SECTION 1 =============== */
+
+#abouttop {
+    grid-area: abouttop;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+
+.box {
+    display: block;
+    background-color: rgb(245, 245, 245);
+    box-sizing: border-box;
+}
+
+.topbox {
+    max-width: 360px;
+}
+
+.boxb{
+    justify-self: center;
+}
+
+.boxc {
+    justify-self: end;
+}
+
+img {
+    max-width: 100%;
+    min-width: inherit;
+}
+
+.box_content {
+    padding: 5px 20px;
+    text-align: left;
+    margin: 0;
+}
+
+h3 {
+    margin: 10px 0;
+    font-weight: 700;
+    font-size: 140%
+}
+
+.green {
+    color: rgb(23, 138, 39);
+}
+
+.blue {
+    color: rgb(22, 134, 193);
+}
+
+.red {
+    color: rgb(133,36,6);
+}
+
+/* ============== BUTTON =============== */
+
+.btn {
+    color: rgb(250, 250, 251);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 110%;
+    font-weight: 600;
+    width: 35%;
+    text-align: center;
+    margin: 1.5rem auto;
+}
+
+.greenbutton {
+    background: rgb(23, 138, 39);
+}
+
+.bluebutton {
+    background: rgb(22, 134, 193);
+}
+
+.redbutton {
+    background: rgb(133, 36, 6);
+}
+
+/* =============== SECTION 2 =============== */
+
+.aboutbottom {
+    grid-area: aboutbottom;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 60px;
+}
+
+.aboutbottom h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.aboutbottom p {
+    margin-bottom: 30px;
+}
+
+.twocolumnright, .twocolumnleft {
+    max-width: 555px;
+}
+
+.twobtn {
+    background: white;
+    color: inherit;
+    float: right;
+    font-size: 130%;
+    border-radius: 10px;
+    border: 0.1em solid rgb(197, 197, 197);
+}
+
+/* =============== SERVICES =============== */
+
+.servicesbg {
+    grid-area: servicesbg;
+    height: 300px;
+    background: url('../images/bg-2.jpg');
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(250, 250, 251);
+}
+
+.servicesbg h2 {
+    font-size: 300%;
+    text-align: center;
+    color: inherit;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 5px rgb(100, 109, 124);
+    font-weight: 400;
+}
+
+.servicesbg p {
+    text-align: center;
+    color: inherit;
+}
+
+
+.servicestop {
+    grid-area: servicestop;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.servicestop h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.colbox {
+    max-width: 260px;
+}
+
+.columntwo {
+    justify-self: center;
+}
+
+.columnthree {
+    justify-self: center;
+}
+
+.columnfour {
+    justify-self: end;
+}
+
+.servicesbottom {
+    grid-area: servicesbottom;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.onelargecolumn {
+    max-width: 1140px;
+    justify-self: center;
+}
+
+.colbtn {
+background: white;
+color: inherit;
+float: left;
+font-size: 130%;
+border-radius: 10px;
+border: 0.1em solid rgb(197, 197, 197);
+width: 10%;
+}
+
+/* =============== CONTACT =============== */
+
+.contact {
+    grid-area: contact;
+    height: 500px;
+    background: url('../images/bg-3.jpg');
+    min-height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: rgb(250, 250, 251);
+}
+
+.contact h2 {
+    font-size: 300%;
+    text-align: center;
+    color: inherit;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgb(100, 109, 124);
+    font-weight: 400;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 15px;
+  margin: 0 auto;
+}
+
+td {
+  width: 365px;
+  vertical-align: top;
+  margin-left: 0;
+}
+
+textarea, input, .yarns {
+    font-size: 100%;
+    background: rgba(255, 255, 255, 0.3);
+    border: 0;
+    border-radius: 5px;
+    padding: 5px 10px 5px 10px;
+    color: black;
+    width: 95%;
+    margin-left: 0;
+}
+
+textarea {
+    height: 116px;
+    resize: none;
+    float: right;
+}
+
+.yarns {
+    max-width: 700px;
+    min-width: inherit;
+    margin: 0 auto;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+.yarns p {
+    color: black;
+    text-align: center;
+}
+
+.groupform {
+    max-width: 700px;
+    min-width: inherit;
+    margin: 0 auto;
+}
+
+input::placeholder {
+    color: black;
+}
+
+input:focus {
+    box-shadow: 2px 2px 5px rgb(100, 109, 124);
+    border: 0;
+}
+
+input[type="submit"] {
+    max-width: 25%;
+    font-size: 120%;
+    float: left;
+    min-width: inherit;
+    color:white;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 0.1em solid rgb(197, 197, 197);
+    background-color: rgb(56, 61, 76);
+    border-radius: 10px;
+}
+
+input#submit:hover {
+    color: rgb(56, 80, 175);
+    border: 0.1em solid rgb(56, 61, 76);
+    background-color: rgb(197, 197, 197);
+}
+
+input#submit:active {
+    background-color: #ffffff;
+}
+
+
+/* =============== FOOTER =============== */
+
+footer h2 {
+    font-size: 300%;
+    text-align: center;
+    color: inherit;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px rgb(100, 109, 124);
+    font-weight: 400;
+    font-style: italic;
+}
+
+footer p {
+    font-size: 100%;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.ibk {
+    margin-top: 20px;
+    font-style: normal;
+    margin-bottom: 20px;
+}
+
+.ibkcolor {
+    color: rgb(133, 36, 6);
+}
